@@ -28,14 +28,14 @@ function draw() {
     strokeWeight(25);
     point(x, y);
 
-    let x = noise(t);
-    let y = noise(t);
+    // let x = noise(t);
+    // let y = noise(t);
 
-    for (let i = 0; i < 50; i++) {
-        x = map(x, 0, 1, 100, width - 100);
-        y = map(y, 0, 1, 100, width - 100);
-        ellipse(x + random(50) * i, y + random(50) * i, 40, 40);
-    }
+    // for (let i = 0; i < 50; i++) {
+    //     x = map(x, 0, 1, 100, width - 100);
+    //     y = map(y, 0, 1, 100, width - 100);
+    //     ellipse(x + random(50) * i, y + random(50) * i, 40, 40);
+    // }
 
     t += 0.05;
 }

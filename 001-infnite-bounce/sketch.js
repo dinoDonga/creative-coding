@@ -17,13 +17,13 @@ function draw() {
     background(20, 1);
     //noStroke();
 
-    fill(0, 255, 0, 120);
+    fill(255, 255, 2550);
     ellipse(x + random(-7, 7), y + random(-7, 7), r);
 
-    fill(0, 0, 255, 120);
+    fill(150, 150, 150);
     ellipse(x + random(-7, 7), y + random(-7, 7), r);
 
-    fill(255, 0, 0, 120);
+    fill(20, 20, 20);
     ellipse((x + random(-7, 7), y + random(-7, 7), r));
 
     fill(255, 255, 255, 120);
@@ -42,9 +42,11 @@ function draw() {
 }
 
 function mousePressed() {
-    noLoop();
+    //noLoop();
+    stoke();
 }
 
 function mouseReleased() {
-    loop();
+    noStroke();
+    //  loop();
 }

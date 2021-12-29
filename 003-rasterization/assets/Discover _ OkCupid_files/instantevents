@@ -1,0 +1,6 @@
+
+		
+		var response = { "not_logged_in" : 1 };
+		parent.InstantEvents.openConnection_cb(response, "");
+		
+	
