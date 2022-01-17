@@ -58,7 +58,7 @@ function draw() {
     noFill();
     stroke(r, g, b);
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 20; i++) {
         beginShape();
         for (let j = 0; j < 360; j += 30) {
             let rad = i * val;
@@ -66,7 +66,8 @@ function draw() {
             let x = rad * sin(i);
             let z = sin(frameCount * 2 + i * 10) * 50;
 
-            rect(x, y, z * size, z * size);
+            //rect(x / 2, y, (z * size) / 2);
+            rect(x, y, z * size, z * size, 50);
         }
 
         endShape();

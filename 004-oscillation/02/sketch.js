@@ -1,7 +1,7 @@
 let slider1, slider2, rSlider, gSlider, bSlider, sizeSlider;
 
 function setup() {
-    createCanvas(450, 450, WEBGL);
+    createCanvas(900, 900, WEBGL);
     angleMode(DEGREES);
     smooth();
 
@@ -42,7 +42,7 @@ function setup() {
     sizeSlider.style("width", "100px");
 
     frameRate(60);
-    createLoop({ duration: 3, gif: true, download: true });
+    //createLoop({ duration: 3, gif: true, download: true });
 }
 
 function draw() {
@@ -69,7 +69,8 @@ function draw() {
             let x = rad * sin(i);
             let z = sin(frameCount * 2 + i * 10) * 50;
 
-            rect(x / 2, y / 2, (z * size) / 2);
+            //rect(x / 2, y, (z * size) / 2);
+            rect(x, y, z * size);
         }
 
         endShape();
