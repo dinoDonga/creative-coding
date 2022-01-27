@@ -10,6 +10,7 @@ function draw() {
     background(30);
 
     rotateX(90);
+    rotateY(90);
 
     noFill();
     stroke(255, 255, 255);
@@ -25,7 +26,7 @@ function draw() {
             let x = rad * sin(i) * 2;
             let z = sin(frameCount * 2 + i * 10) * 50 * 0.8;
 
-            vertex(x, y, z);
+            vertex(z, y, y);
         }
         endShape(CLOSE);
         // ##################################################################//
