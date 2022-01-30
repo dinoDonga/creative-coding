@@ -3,7 +3,7 @@ function setup() {
     angleMode(DEGREES);
 
     frameRate(60);
-    createLoop({ duration: 3.0, gif: true });
+    createLoop({ duration: 6, gif: true });
 }
 
 function draw() {
