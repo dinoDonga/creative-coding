@@ -1,9 +1,9 @@
-let r, r1, x, x1, y, y1, xSpeed, ySpeed;
+let r1, x, x1, y, y1, xSpeed, ySpeed;
 
 function setup() {
     const canvas = createCanvas(800, 600);
     canvas.class("canvas");
-    r = 25;
+
     x = 400;
     y = 300;
     x1 = 150;

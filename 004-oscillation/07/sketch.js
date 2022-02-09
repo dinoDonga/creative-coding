@@ -1,15 +1,15 @@
 function setup() {
-    createCanvas(450, 450, WEBGL);
+    createCanvas(900, 900, WEBGL);
     angleMode(DEGREES);
 
     frameRate(60);
-    createLoop({ duration: 6, gif: true });
+    //createLoop({ duration: 6, gif: true });
 }
 
 function draw() {
     background(30);
 
-    rotateX(90);
+    rotateX(rotation);
     rotateY(frameCount);
 
     noFill();

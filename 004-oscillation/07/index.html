@@ -13,6 +13,26 @@
     </head>
     <body>
         <body>
+            <script>
+                let rotation = 90;
+
+                document.addEventListener("keydown", (e) => {
+                    if (e.keyCode === 37) {
+                        if (rotation === 180) {
+                            return;
+                        }
+                        rotation += 10;
+                    }
+
+                    if (e.keyCode === 39) {
+                        if (rotation <= 1) {
+                            return;
+                        }
+                        rotation -= 10;
+                    }
+                    console.log(rotation);
+                });
+            </script>
             <script src="sketch.js"></script>
         </body>
     </body>

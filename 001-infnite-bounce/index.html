@@ -12,6 +12,34 @@
     </head>
     <body>
         <body>
+            <script>
+                let r = 5;
+
+                document.addEventListener("keydown", (e) => {
+                    if (e.keyCode === 37) {
+                        if (r >= 180) {
+                            return;
+                        }
+                        if (r < 20) {
+                            r++;
+                        } else {
+                            r += 5;
+                        }
+                    }
+
+                    if (e.keyCode === 39) {
+                        if (r <= 1) {
+                            return;
+                        }
+                        if (r <= 20) {
+                            r--;
+                        } else {
+                            r -= 5;
+                        }
+                    }
+                    console.log(r);
+                });
+            </script>
             <script src="sketch.js"></script>
         </body>
     </body>
